@@ -14,13 +14,24 @@ header{
     align-items: center;
 }
 .content {
-    display: flex;
     background-color: rgb(68, 20, 20);
     height: 60vh;
     width: 70vw;
+    display: flex;
 }
 .meimg{
     height: 180px;
-    float: right;
+}
+.right{
+    background-color: aqua;
+    height: 90%;
+    width: 30%;
+}
+.left{
+
+    background-color: darkcyan;
+    height: 90%;
+    width: 60%;
+    border-radius: 8px;
     
 }
