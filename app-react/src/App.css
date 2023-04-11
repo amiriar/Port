@@ -6,9 +6,16 @@
  padding: 0;
  margin: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 header{
   height: 350vh;
 }
+a{
+  text-decoration: none;
+}
+
 nav{
   background-color: #0c0c27;
   color: #DBE9FA;
@@ -43,22 +50,32 @@ article{
   background-color: aquamarine;
   height: 50vh;
   width: 60vw;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
   align-items: center;
   justify-content: center;
   margin: auto;
 }
 .left{
-  height: 100%;
-  background-color: #DBE9FA;
-  width: 61%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  font-size: 2rem;
 }
 .right{
-  height: 100%;
-  background-color: black;
-  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.meimg{
+  border-radius: 50%;
+  height: 250px;
+  margin-left: 150px;
+}
+.name{
+  color: #DBE9FA;
+}
 
 
 @media screen and (max-width: 320px) {
@@ -69,5 +86,11 @@ article{
   .name{
     font-size: 1.2rem;
   }
-
+  .tozih{
+    font-size: 1.2rem;
+  }
+  .meimg{
+    height: 100px;
+    margin-left: 0;
+  }
 }
