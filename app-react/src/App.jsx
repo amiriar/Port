@@ -8,14 +8,21 @@ function App() {
     <div className="App">
       <header>
         <nav>
-          <h2>amiriar</h2>
+          <h2 className='name'>AMIRIAR</h2>
           <ul>
             <li>Home</li>
             <li>Works</li>
             <li>About</li>
           </ul>
         </nav>
-        <article></article>
+        <article>
+          <div className="id">
+            <div className='left'>
+              <h1>Hi, My name is Amirreza Abdolrahimi and i'm a frontend web devloper</h1>
+            </div>
+            <div className='right'></div>
+          </div>
+        </article>
       </header>
       <main>
 
