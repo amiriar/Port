@@ -18,7 +18,7 @@ function App() {
         <article id='1'>
           <div className="id">
             <div className='left'>
-              <h2 className='tozih'>Hi, My name is Amirreza Abdolrahimi and i'm a frontend web devloper! <br /> i know some of them languages like:</h2>
+              <h2 className='tozih'>Hi, My name is Amirreza Abdolrahimi and i'm a frontend web devloper! and i know some of them languages like:</h2>
               <div className='langs'>
                 <img src="/html.png" alt="html" className='langpic' draggable="false"/>
                 <img src="/css.png" alt="css" className='langpic' draggable="false"/>
@@ -31,8 +31,10 @@ function App() {
           </div>
           <span className='follow'><a href='#2' className='ff' >follow me down here!</a></span>
         </article>
-        <article id='2'>
+        <article id='2' className='article2'>
+          <div className='about'>
 
+          </div>
         </article>
         <article id='3'>
 
