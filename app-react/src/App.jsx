@@ -10,9 +10,9 @@ function App() {
         <nav>
         <a href="#1"><h2 className='name'>AMIRIAR</h2></a>
           <ul>
-            <li>Home</li>
-            <li>Works</li>
-            <li>About</li>
+            <li><a href='#1'>Home</a></li>
+            <li><a href='#2'>Works</a></li>
+            <li><a href='#3'>About</a></li>
           </ul>
         </nav>
         <article id='1'>
@@ -29,6 +29,13 @@ function App() {
             </div>
             <div className='right'><img className='meimg' src="/icon.png" alt="amir's photo"/></div>
           </div>
+          <span className='follow'><a href='#2' className='ff' >follow me down here!</a></span>
+        </article>
+        <article id='2'>
+
+        </article>
+        <article id='3'>
+
         </article>
       </header>
       <main>

@@ -43,12 +43,16 @@ li{
 }
 article{
   height: 100vh;
-  background-color: #252525;
   display: flex;
   align-items: center;
+  outline: 1px solid rgb(212, 212, 212);
+}
+article{
+  background: rgb(255,255,255);
+  background: conic-gradient(from 90deg at -10% 100%,#bcc1cd 0deg,#bcc1cd 90deg,#fff 1turn);
 }
 .id{
-  background-color: aquamarine;
+
   height: 50vh;
   width: 60vw;
   display: grid;
@@ -73,6 +77,7 @@ article{
   border-radius: 50%;
   height: 250px;
   margin-left: 150px;
+  outline: auto rgb(83, 41, 41);
 }
 .name{
   color: #DBE9FA;
@@ -85,10 +90,23 @@ article{
 .tozih{
   font-size: 1.8rem;
   font-family: 'Chakra Petch', sans-serif;
+  padding-right: 0px;
+  margin-right: 100px;
 }
 .langpic{
   height: 48px;
 }
+.follow{
+  position: absolute;
+  margin-left: 100px;
+  rotate: 90deg;
+  bottom: 0px;
+  text-transform: uppercase;
+}
+.ff{
+  color: #000;
+}
+
 
 @media screen and (max-width: 320px) {
   li{
@@ -99,10 +117,26 @@ article{
     font-size: 1.2rem;
   }
   .tozih{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-left: -30px;
   }
   .meimg{
-    height: 100px;
+    margin-right: 0px;
+    height: 130px;
     margin-left: 0;
+    margin-top: 7em;
+    border-radius: 10px;
+  }
+  .id{
+    margin-top: 10em;
+    box-sizing: border-box;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  }
+  .langpic{
+    margin-right: 10px;
+  }
+  .follow{
+    margin-left: 120px;
   }
 } 
