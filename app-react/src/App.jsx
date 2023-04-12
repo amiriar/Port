@@ -7,16 +7,21 @@ function App() {
   return (
     <div className="App">
       <header>
+        <div className='navv'>
         <nav>
-        <a href="#1"><h2 className='name'>AMIRIAR</h2></a>
           <ul>
             <li><a href='#1'>Home</a></li>
-            <li><a href='#2'>Works</a></li>
-            <li><a href='#3'>About</a></li>
+            <li><a href='#2'>About</a></li>
+            <li><a href='#1' className='name'>AMIRIAR</a></li>
+            <li><a href='#3'>Works</a></li>
+            <li><a href='#4'>Contact</a></li>
           </ul>
         </nav>
+        </div>
         <article id='1'>
           <div className="id">
+            
+            <div className='right'><img className='meimg' src="/icon.png" alt="amir's photo" draggable="false" /></div>
             <div className='left'>
               <h2 className='tozih'>Hi, My name is Amirreza Abdolrahimi and i'm a frontend web devloper! and i know some of them languages like:</h2>
               <div className='langs'>
@@ -27,22 +32,26 @@ function App() {
                 <img src="react-img.png" alt="react" className='langpic' draggable="false" />
               </div>
             </div>
-            <div className='right'><img className='meimg' src="/icon.png" alt="amir's photo"/></div>
           </div>
           <span className='follow'><a href='#2' className='ff' >follow me down here!</a></span>
         </article>
+        </header>
         <article id='2' className='article2'>
           <div className='about'>
-
+          <div className='left2'>i'm amirreza abdolrahimi and my mission today is to stay mitovated and move forward as the technology and world goes !
+           i've been coding and working as a frontend web developer and trying to live of off that !(if you know what i mean..)<br/>
+            ilon musk once said : try to be useful. are you contributing more than you consume? i wanna know it !</div>
+            <div className="right2"><img src="/Sup.jpg" alt="amiriar is is" className='img' draggable="false" /></div>
+            
           </div>
         </article>
         <article id='3'>
 
         </article>
-      </header>
-      <main>
+        <footer id='4'>
 
-      </main>
+        </footer>
+      
     </div>
   )
 }
