@@ -41,8 +41,50 @@ function App() {
           <div className='left2'>i'm amirreza abdolrahimi and my mission today is to stay mitovated and move forward as the technology and world goes !
            i've been coding and working as a frontend web developer and trying to live of off that !(if you know what i mean..)<br/>
             ilon musk once said : try to be useful. are you contributing more than you consume? i wanna know it !</div>
-            <div className="right2"><img src="/Sup.jpg" alt="amiriar is is" className='img' draggable="false" /></div>
-            
+            <div className="right2">
+              <div className="coolpic">
+              {/* <img src="/Sup.jpg" alt="amiriar is is" className='img' draggable="false" /> */}
+              
+                
+               <svg>
+                <defs>
+                  <filter id="noise">
+                    <feTurbulence
+                      baseFrequency="0.7,0.8"
+                      seed="0"
+                      type="fractalNoise"
+                      result="static"
+                    >
+                      <animate
+                        attributeName="seed"
+                        values="0;100"
+                        dur="800ms"
+                        repeatCount="1" 
+                        begin="card.mouseenter"                           
+                      />
+                    </feTurbulence>
+                     <feDisplacementMap in="SourceGraphic" in2="static">
+                       <animate
+                         attributeName="scale"
+                         values="0;40;0"
+                         dur="800ms"
+                         repeatCount="1" 
+                         begin="card.mouseenter"                           
+                       />
+                     </feDisplacementMap>
+                  </filter>  
+                </defs>
+              </svg>
+              <div id="card">
+                <img 
+                  src="/Sup.jpg" 
+                  alt="Neon sign in woods" 
+                  className='coolme'
+                />
+              </div> 
+
+              </div>
+              </div>
           </div>
         </article>
         <article id='3'>

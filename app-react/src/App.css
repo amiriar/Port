@@ -7,6 +7,7 @@
 
 
 *{
+
  padding: 0;
  margin: 0;
 }
@@ -169,6 +170,58 @@ article{
   
   100%{
     transform: scale(120%);
+  }
+}
+
+
+.coolpic{
+  height: 100%;
+  display: flex;
+  place-items: center;
+  /* justify-content: center; */
+  /* background-color: rgb(16 23 24); */
+  /* margin: 0; */
+  /* margin-top: -7rem; */
+  /* padding: 1rem; */
+  overflow-x: hidden;
+}
+.coolme{
+  
+}
+@keyframes pulse {
+  from, to {
+    scale: 1;
+  }
+  
+  50% {
+    scale: 1.08;
+  }
+}
+
+#card {
+  width: 450px;
+  aspect-ratio: 2 / 3;
+  border: 0.25rem solid rgba(0, 0, 0, 0.699);
+  border-radius: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#card > img {  
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+#card:hover > img {
+  animation: pulse 800ms ease-in-out;
+  filter: url(#noise);
+}
+
+@media(max-width: 768px) {
+  #card {
+    width: 100%;
   }
 }
 
